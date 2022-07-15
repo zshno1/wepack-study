@@ -22,24 +22,24 @@ module.exports = {
         type: "asset/resource",
       },
       // 处理字体
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
-      },
+    //   {
+    //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
+    //     type: "asset/resource",
+    //   },
       /**
        * 加载数据 npm install --save-dev csv-loader xml-loader
        * 1、JSON 支持实际上是内置的，可以直接导入
        * 2、要导入 CSV、TSV 和 XML，你可以使用 csv-loader 和 xml-loader
        *    npm install --save-dev csv-loader xml-loader
        */
-      {
-        test: /\.(csv|tsv)$/,
-        use: ["csv-loader"],
-      },
-      {
-        test: /\.xml$/,
-        use: ["xml-loader"],
-      },
+    //   {
+    //     test: /\.(csv|tsv)$/,
+    //     use: ["csv-loader"],
+    //   },
+    //   {
+    //     test: /\.xml$/,
+    //     use: ["xml-loader"],
+    //   },
     ],
   },
 };
